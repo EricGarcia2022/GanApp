@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+  
+}
+
+body{
+text-align: justify;
+}
+
+/* Navbar.css */
+
+.navbar {
+  background-image: linear-gradient(to right, #43e97b 0%, #0a9722 100%);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo h6 {
+    color: #ffffff; /* Color del texto del logo */
+    margin: 15px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar img{
+    margin-left: 0;
+    padding-left: 5px;
+    position:unset;
+    transform: translateX(-50%);
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #ffffff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #80cbc4; /* Color del enlace al pasar el ratón por encima */
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #1397298c;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: greenyellow;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /*Seccion de actualizar Animal Bovino*/
+
+.form-register{
+  width: 600px;
+  padding: 50px;
+  margin: auto;
+  box-shadow: 7px 13px 37px #022b23;
+  margin-top: 70px;
+  border-radius: 20px;
+  font-family: 'calibri';
+  color: white;
+  background-color:rgba(0, 100, 0, 0.644)
+    
+}
+.form-register h4{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls{
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border: 1px solid #022b23;
+  font-family: 'calibri';
+  font-size: 18px;
+}
+
+.form-register{
+  width: 50%;
+  height: 80%;
+  line-height: 10px;
+}
+.form-register .botons{
+    padding: 1rem;
+    font-weight: 200px;
+    height: 30%;
+    width: 30%;
+    background: #13df24;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    color: greenyellow;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+.botons:hover{
+  text-align: center;
+  background-color:aquamarine ;
+ }
+.container{
+  width: 50%;
+  position: relative;
+}
+.mySlides{
+  display: none;
+}
+.mySlides img{
+  width: 100%;
+}
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  -user-select: none;
+  border:  solid #fff 2px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+  background-color: rgba(110, 228, 14, 0.8);
+}
+.elements{
+  text-align: center;
+}
+.quadrate{
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: greenyellow;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active, .quadrate:hover{
+  background-color: #fff;
+}
+@media screen and (max-width:900px) {
+  .container{
+      width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .container{
+      width: 100%;
+  }
+  .prev,
+  .next{
+      padding: 5px;
+  }
+}
+
+  /*Fomularion inicio de Registro usuario nuevo*/
+  form {
+    width: 450px;
+    height: 540px;
+    padding: 5px;
+    margin: 450px;
+    margin-top: auto;
+    display:inline-block;
+    background-color: rgba(8, 231, 64, 0.842);
+    text-align: center;
+    text-decoration: #222;
+    border-radius: 10px;
+  }
+  form input{
+    width: 80%;
+    display: block;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+form button{
+  padding: 1rem;
+  font-weight: 400;
+  background-color:rgba(68, 184, 15, 0.863);
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: auto;
+  transition: all .3s ease-in;
+  color: white;
+  text-decoration: none;
+} 
+
+
+form button:hover{
+  background-color:aquamarine ;
+}
+
+form textarea {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.452);
+  border: none;
+  border-bottom: white thin solid;
+  text-align: center;
+
+}
+
+h1{
+  text-align: center;
+  color: green;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin: 40px;
+}
+
+h2{
+  text-align: center;
+  color: green;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin: 40px;
+}
+
+h3{
+  text-align: center;
+  color:green;
+  margin: auto;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: auto;
+}
+/*Formulario Control de producción*/
+form .MedicalHitory{
+height: 600px;
+}
